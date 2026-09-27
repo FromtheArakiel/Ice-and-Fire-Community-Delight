@@ -1,8 +1,8 @@
 package dev.arakiel.iceandfirecommunitydelight.item;
 
 import com.iafenvoy.iceandfire.entity.GhostSwordEntity;
-import dev.arakiel.iceandfirecommunitydelight.ModTiers;
-import dev.arakiel.iceandfirecommunitydelight.util.IafCompat;
+import dev.arakiel.iceandfirecommunitydelight.KnifeTiers;
+import dev.arakiel.iceandfirecommunitydelight.util.IceAndFireCompat;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class PhantomKnifeItem extends SwordItem {
     public PhantomKnifeItem() {
-        super(ModTiers.PHANTASMAL, new Properties().attributes(SwordItem.createAttributes(ModTiers.PHANTASMAL, 5, -1.0F)));
+        super(KnifeTiers.PHANTASMAL, new Properties().attributes(SwordItem.createAttributes(KnifeTiers.PHANTASMAL, 5, -1.0F)));
     }
 
     @Override
@@ -45,7 +45,7 @@ public class PhantomKnifeItem extends SwordItem {
     }
 
     private static void spawnGhostSword(ItemStack stack, Player player) {
-        EntityType<GhostSwordEntity> type = IafCompat.ghostSwordType();
+        EntityType<GhostSwordEntity> type = IceAndFireCompat.ghostSwordType();
         if (type == null) {
             return;
         }

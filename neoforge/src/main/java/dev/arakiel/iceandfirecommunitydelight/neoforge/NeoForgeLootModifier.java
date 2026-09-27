@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 /**
  * Adds the contents of another loot table to the loot table it is attached to.
  *
- * <p>This is the direct 1.21 equivalent of the old {@code IceAndFireDelightModLootTableModifier}.
+ * <p>This is the direct 1.21 equivalent of the old {@code IceAndFireDelightLootTableAdditionsTableModifier}.
  * It is built on NeoForge's own {@link AddTableLootModifier}, so only the codec has to be provided
  * to give the modifier its own id.</p>
  */

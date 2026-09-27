@@ -1,8 +1,8 @@
 package dev.arakiel.iceandfirecommunitydelight.fabric;
 
 import dev.arakiel.iceandfirecommunitydelight.IceAndFireDelight;
-import dev.arakiel.iceandfirecommunitydelight.ModLoot;
-import dev.arakiel.iceandfirecommunitydelight.ModTrades;
+import dev.arakiel.iceandfirecommunitydelight.LootTableAdditions;
+import dev.arakiel.iceandfirecommunitydelight.Trades;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
@@ -26,16 +26,16 @@ public final class IceAndFireDelightFabric implements ModInitializer {
 
     private static void registerTrades() {
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FISHERMAN, 4,
-                offers -> offers.addAll(ModTrades.fishermanTrades()));
+                offers -> offers.addAll(Trades.fishermanTrades()));
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 4,
-                offers -> offers.addAll(ModTrades.butcherTrades()));
+                offers -> offers.addAll(Trades.butcherTrades()));
         TradeOfferHelper.registerWanderingTraderOffers(1,
-                offers -> offers.addAll(ModTrades.wanderingTrades()));
+                offers -> offers.addAll(Trades.wanderingTrades()));
     }
 
     private static void registerLoot() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
-            for (ModLoot.Addition addition : ModLoot.ENTITY_DROPS) {
+            for (LootTableAdditions.Addition addition : LootTableAdditions.ENTITY_DROPS) {
                 if (key.equals(addition.target())) {
                     tableBuilder.withPool(LootPool.lootPool().add(NestedLootTable.lootTableReference(addition.addition())));
                 }

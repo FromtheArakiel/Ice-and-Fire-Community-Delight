@@ -4,28 +4,28 @@
       "model": "iceandfirecommunitydelight:block/dragon_special_pie"
     },
     "facing=north,bites=1": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_0"
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_1"
     },
     "facing=north,bites=2": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_1"
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_2"
     },
     "facing=north,bites=3": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_2"
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_3"
     },
     "facing=east,bites=0": {
       "model": "iceandfirecommunitydelight:block/dragon_special_pie",
       "y": 90
     },
     "facing=east,bites=1": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_0",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_1",
       "y": 90
     },
     "facing=east,bites=2": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_1",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_2",
       "y": 90
     },
     "facing=east,bites=3": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_2",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_3",
       "y": 90
     },
     "facing=south,bites=0": {
@@ -33,15 +33,15 @@
       "y": 180
     },
     "facing=south,bites=1": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_0",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_1",
       "y": 180
     },
     "facing=south,bites=2": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_1",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_2",
       "y": 180
     },
     "facing=south,bites=3": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_2",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_3",
       "y": 180
     },
     "facing=west,bites=0": {
@@ -49,15 +49,15 @@
       "y": 270
     },
     "facing=west,bites=1": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_0",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_1",
       "y": 270
     },
     "facing=west,bites=2": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_1",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_2",
       "y": 270
     },
     "facing=west,bites=3": {
-      "model": "iceandfirecommunitydelight:block/dragon_special_pie_blockstates_blockstate_2",
+      "model": "iceandfirecommunitydelight:block/dragon_special_pie_bites_3",
       "y": 270
     }
   }

@@ -13,9 +13,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 11,
-                "type": "minecraft:uniform"
+                "value": 1,
+                "type": "minecraft:constant"
               }
             },
             {
@@ -42,7 +41,7 @@
               "enchantment": "minecraft:looting"
             },
             {
-              "function": "iceandfire:sea_serpent_loot"
+              "function": "iceandfirecommunitydelight:customize_to_sea_serpent_meat"
             }
           ]
         }

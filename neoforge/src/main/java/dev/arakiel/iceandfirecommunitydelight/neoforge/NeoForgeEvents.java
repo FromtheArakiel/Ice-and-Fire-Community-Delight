@@ -1,7 +1,7 @@
 package dev.arakiel.iceandfirecommunitydelight.neoforge;
 
 import dev.arakiel.iceandfirecommunitydelight.IceAndFireDelight;
-import dev.arakiel.iceandfirecommunitydelight.ModTrades;
+import dev.arakiel.iceandfirecommunitydelight.Trades;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -17,15 +17,15 @@ public final class NeoForgeEvents {
     @SubscribeEvent
     public static void onVillagerTrades(VillagerTradesEvent event) {
         if (event.getType() == VillagerProfession.FISHERMAN) {
-            event.getTrades().get(4).addAll(ModTrades.fishermanTrades());
+            event.getTrades().get(4).addAll(Trades.fishermanTrades());
         }
         if (event.getType() == VillagerProfession.BUTCHER) {
-            event.getTrades().get(4).addAll(ModTrades.butcherTrades());
+            event.getTrades().get(4).addAll(Trades.butcherTrades());
         }
     }
 
     @SubscribeEvent
     public static void onWandererTrades(WandererTradesEvent event) {
-        event.getGenericTrades().addAll(ModTrades.wanderingTrades());
+        event.getGenericTrades().addAll(Trades.wanderingTrades());
     }
 }

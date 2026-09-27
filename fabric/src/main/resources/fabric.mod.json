@@ -8,7 +8,7 @@
     "FromtheArakiel"
   ],
   "license": "GPL-3.0-only",
-  "icon": "assets/iceandfirecommunitydelight/textures/logo-v3-1x.png",
+  "icon": "assets/iceandfirecommunitydelight/textures/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

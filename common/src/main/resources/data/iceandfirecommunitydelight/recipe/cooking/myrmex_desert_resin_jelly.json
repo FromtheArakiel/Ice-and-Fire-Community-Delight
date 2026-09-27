@@ -8,6 +8,9 @@
     },
     {
       "item": "iceandfire:myrmex_desert_resin"
+    },
+    {
+      "item": "minecraft:sugar"
     }
   ],
   "recipe_book_tab": "meals",

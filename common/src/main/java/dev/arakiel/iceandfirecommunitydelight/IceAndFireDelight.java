@@ -22,12 +22,13 @@ public final class IceAndFireDelight {
     }
 
     public static void init() {
-        ModConfig.load();
-        ModTiers.init();
-        ModEffects.register();
-        ModBlocks.register();
-        ModItems.register();
-        ModTabs.register();
-        ModEvents.register();
+        CommonConfig.load();
+        KnifeTiers.init();
+        MobEffectRegistry.register();
+        LootFunctions.register();
+        BlockRegistry.register();
+        ItemRegistry.register();
+        CreativeTabs.register();
+        CommonEvents.register();
     }
 }

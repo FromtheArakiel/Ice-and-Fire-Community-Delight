@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "iceandfirecommunitydelight:block/shiny_scales_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "iceandfirecommunitydelight:block/shiny_scales_block"
+    },
+    "axis=z": {
+      "model": "iceandfirecommunitydelight:block/shiny_scales_block",
+      "x": 90
+    }
+  }
+}

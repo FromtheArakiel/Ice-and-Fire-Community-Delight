@@ -10,7 +10,7 @@ authors = "FromtheArakiel"
 description = '''
 Ice and Fire themed food, knives and pastries for Farmer's Delight.
 '''
-logoFile = "assets/iceandfirecommunitydelight/textures/logo-v3-1x.png"
+logoFile = "assets/iceandfirecommunitydelight/textures/icon.png"
 
 [[dependencies.iceandfirecommunitydelight]]
 modId = "neoforge"

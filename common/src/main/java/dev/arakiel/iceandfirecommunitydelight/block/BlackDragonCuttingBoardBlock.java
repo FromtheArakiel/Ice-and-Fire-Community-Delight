@@ -15,7 +15,7 @@ import vectorwing.farmersdelight.common.registry.ModBlockEntityTypes;
  * <p>The 1.20.1 version also shipped a custom block entity renderer that reproduced Farmer's
  * Delight's renderer one to one; the board uses Farmer's Delight's block entity type, so that
  * renderer is already registered for it and the copy could be dropped. The tooltip lives in
- * {@code DelightBlockItem}.</p>
+ * {@code TooltipBlockItem}.</p>
  */
 public class BlackDragonCuttingBoardBlock extends CuttingBoardBlock {
     public BlackDragonCuttingBoardBlock(BlockBehaviour.Properties properties) {

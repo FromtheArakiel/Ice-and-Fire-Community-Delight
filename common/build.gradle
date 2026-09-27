@@ -2,6 +2,15 @@ architectury {
     common rootProject.enabled_platforms.split(',')
 }
 
+repositories {
+    // Uranus and Jupiter - the libraries Ice and Fire Community Edition itself depends on. They are
+    // needed on the compile classpath because our loot function touches an Ice and Fire entity.
+    maven {
+        name = 'CurseMaven'
+        url = 'https://cursemaven.com'
+    }
+}
+
 dependencies {
     // We depend on Fabric Loader here to use the Fabric @Environment annotations,
     // which get remapped to the correct annotations on each platform.
@@ -16,4 +25,14 @@ dependencies {
     modCompileOnly files(rootProject.file('libs/IceAndFireCE-2.0-beta.15-1.21.1-fabric.jar'))
     modCompileOnly files(rootProject.file('libs/FarmersDelight-1.21.1-3.3.6+refabricated.jar'))
     modCompileOnly files(rootProject.file('libs/Patchouli-1.21.1-93-FABRIC.jar'))
+
+    // NightConfig (TOML) - the config library used by ModConfig.
+    // Both platform projects nest it into the jar, so it is compile only here.
+    compileOnly "com.electronwill.night-config:core:$rootProject.nightconfig_version"
+    compileOnly "com.electronwill.night-config:toml:$rootProject.nightconfig_version"
+
+    // Transitive dependencies of Ice and Fire Community Edition (the Uranus animation library and
+    // the Jupiter config library). Compile only: the game gets them together with Ice and Fire.
+    compileOnly "curse.maven:uranus-1010827:8682870"
+    compileOnly "curse.maven:jupiter-1072905:7738312"
 }
