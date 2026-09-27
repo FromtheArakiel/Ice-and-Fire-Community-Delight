@@ -49,7 +49,14 @@ side = "BOTH"
 
 [[dependencies.iceandfirecommunitydelight]]
 modId = "patchouli"
-type = "required"
+type = "optional"
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.iceandfirecommunitydelight]]
+modId = "jei"
+type = "optional"
 versionRange = "[1.0,)"
 ordering = "AFTER"
 side = "BOTH"

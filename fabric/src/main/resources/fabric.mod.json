@@ -13,6 +13,9 @@
   "entrypoints": {
     "main": [
       "dev.arakiel.iceandfirecommunitydelight.fabric.IceAndFireDelightFabric"
+    ],
+    "jei_mod_plugin": [
+      "dev.arakiel.iceandfirecommunitydelight.integration.JeiIntegration"
     ]
   },
   "depends": {
@@ -22,7 +25,10 @@
     "architectury": ">=13.0.11",
     "fabric-api": "*",
     "farmersdelight": "*",
-    "iceandfire": "*",
-    "patchouli": "*"
+    "iceandfire": "*"
+  },
+  "recommends": {
+    "patchouli": "*",
+    "jei": "*"
   }
 }

@@ -29,7 +29,7 @@ import java.util.Optional;
 public final class IceAndFireCompat {
     public static final String NAMESPACE = "iceandfire";
 
-    private static MobEffect frozenEffect;
+    private static Holder<MobEffect> frozenEffect;
     private static boolean frozenEffectResolved;
 
     private IceAndFireCompat() {
@@ -54,12 +54,12 @@ public final class IceAndFireCompat {
         if (!frozenEffectResolved) {
             frozenEffect = BuiltInRegistries.MOB_EFFECT
                     .getHolder(ResourceKey.create(Registries.MOB_EFFECT, key("frozen")))
-                    .map(Holder::value)
                     .orElse(null);
             frozenEffectResolved = true;
         }
         if (frozenEffect != null) {
-            target.addEffect(new MobEffectInstance(BuiltInRegistries.MOB_EFFECT.wrapAsHolder(frozenEffect), ticks));
+            // The registry holder itself, so the effect counts as active for Ice and Fire too.
+            target.addEffect(new MobEffectInstance(frozenEffect, ticks));
         }
     }
 

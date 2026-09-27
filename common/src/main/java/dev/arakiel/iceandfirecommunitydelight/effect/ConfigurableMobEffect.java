@@ -32,7 +32,9 @@ public class ConfigurableMobEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity entity, int amplifier) {
-        if (this.tickAction != null) {
+        // Vanilla ticks the active effects of both sides, so the game logic is kept on the server.
+        // Returning true keeps the effect alive either way.
+        if (this.tickAction != null && !entity.level().isClientSide()) {
             this.tickAction.accept(entity, amplifier);
         }
         return true;

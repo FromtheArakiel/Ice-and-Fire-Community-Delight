@@ -44,7 +44,11 @@ public final class MobEffectRegistry {
             register("dragon_flight", () -> new ConfigurableMobEffect(MobEffectCategory.BENEFICIAL, -39322)
                     .onTick((entity, amplifier) -> {
                         if (entity instanceof Player player) {
-                            player.getAbilities().mayfly = true;
+                            if (!player.getAbilities().mayfly) {
+                                player.getAbilities().mayfly = true;
+                                // The ability flag has to reach the client, otherwise the player cannot fly.
+                                player.onUpdateAbilities();
+                            }
                             CommonEvents.markFlight(player);
                         }
                     })
@@ -70,9 +74,24 @@ public final class MobEffectRegistry {
         EFFECTS.register();
     }
 
-    /** {@code RegistrySupplier} -> {@code Holder} so the effects can be applied like vanilla ones. */
+    /**
+     * Resolves the canonical registry holder of one of the mod's effects.
+     *
+     * <p>{@code LivingEntity#hasEffect}, {@code #getEffect} and {@code #removeEffect} look the
+     * passed holder up in a map that is keyed by the holder the effect was applied with, and they
+     * use plain equality for that. A {@code RegistrySupplier} is only <em>a</em> holder
+     * implementation - never the one the registry itself created - so it can neither apply nor
+     * match an effect. Everything therefore has to go through the holder the registry knows.</p>
+     */
     public static Holder<MobEffect> holder(RegistrySupplier<MobEffect> effect) {
-        return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(effect.get());
+        // Note: getRegistryId() is the id of the registry (minecraft:mob_effect); the id of the
+        // entry itself is getId(), which is what DeferredSupplier#getKey() is built from.
+        return BuiltInRegistries.MOB_EFFECT.getHolderOrThrow(effect.getKey());
+    }
+
+    /** {@code entity.hasEffect(...)} for one of the mod's effects, using the canonical holder. */
+    public static boolean hasEffect(LivingEntity entity, RegistrySupplier<MobEffect> effect) {
+        return entity.hasEffect(holder(effect));
     }
 
     public static MobEffectInstance instance(RegistrySupplier<MobEffect> effect, int duration) {

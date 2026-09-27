@@ -1,6 +1,7 @@
 package dev.arakiel.iceandfirecommunitydelight;
 
-import dev.arakiel.iceandfirecommunitydelight.util.Advancements;
+import dev.arakiel.iceandfirecommunitydelight.integration.PatchouliIntegration;
+import dev.architectury.platform.Platform;
 import dev.architectury.event.EventResult;
 import dev.architectury.event.events.common.EntityEvent;
 import dev.architectury.event.events.common.PlayerEvent;
@@ -32,8 +33,10 @@ public final class CommonEvents {
         });
 
         PlayerEvent.PLAYER_JOIN.register(player -> {
-            if (CommonConfig.giveBookOnStartup) {
-                Advancements.award(player, "grant_book_on_first_join_adv");
+            // The mod loaded check sits in front of the call so the integration class - and with it
+            // Patchouli - is never even resolved when Patchouli is not installed.
+            if (CommonConfig.giveBookOnStartup && Platform.isModLoaded(PatchouliIntegration.MOD_ID)) {
+                PatchouliIntegration.grantCookbookOnFirstJoin(player);
             }
         });
 
@@ -53,7 +56,7 @@ public final class CommonEvents {
      * {@code removeAttributeModifiers} override.
      */
     private static void updateFlight(Player player) {
-        if (player.hasEffect(MobEffectRegistry.DRAGON_FLIGHT)) {
+        if (MobEffectRegistry.hasEffect(player, MobEffectRegistry.DRAGON_FLIGHT)) {
             return;
         }
         if (!FLIGHT_GRANTED.remove(player.getUUID())) {

@@ -26,6 +26,10 @@ dependencies {
     modCompileOnly files(rootProject.file('libs/FarmersDelight-1.21.1-3.3.6+refabricated.jar'))
     modCompileOnly files(rootProject.file('libs/Patchouli-1.21.1-93-FABRIC.jar'))
 
+    // JEI is an integration, not a dependency: only the Fabric jar is needed to compile
+    // JeiIntegration, the plugin is discovered by JEI itself and nothing is shipped.
+    modCompileOnly files(rootProject.file('libs/jei-1.21.1-fabric-19.56.0.439.jar'))
+
     // NightConfig (TOML) - the config library used by ModConfig.
     // Both platform projects nest it into the jar, so it is compile only here.
     compileOnly "com.electronwill.night-config:core:$rootProject.nightconfig_version"

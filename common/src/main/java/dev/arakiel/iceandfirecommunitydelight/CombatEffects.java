@@ -33,27 +33,33 @@ public final class CombatEffects {
      * hits with a direct attacker, exactly like the 1.20.1 event handlers did.
      */
     public static void onLivingHurt(LivingEntity victim, DamageSource source, float amount) {
+        // The Fabric side of the hurt event also fires for the client side copy of an entity, but
+        // every effect below is exclusive to the server.
+        if (victim.level().isClientSide()) {
+            return;
+        }
+
         Entity attackerEntity = source.getEntity();
         if (!(attackerEntity instanceof LivingEntity attacker) || attacker == victim) {
             return;
         }
 
-        if (attacker.hasEffect(MobEffectRegistry.FIRE_ASPECT)) {
+        if (MobEffectRegistry.hasEffect(attacker, MobEffectRegistry.FIRE_ASPECT)) {
             victim.igniteForSeconds(15);
         }
 
-        if (attacker.hasEffect(MobEffectRegistry.DRAGONS_MIGHT)) {
+        if (MobEffectRegistry.hasEffect(attacker, MobEffectRegistry.DRAGONS_MIGHT)) {
             victim.igniteForSeconds(15);
             victim.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 300, 2));
             strikeWithLightning(victim);
         }
 
-        if (attacker.hasEffect(MobEffectRegistry.LIGHTNING_STRIKE)) {
+        if (MobEffectRegistry.hasEffect(attacker, MobEffectRegistry.LIGHTNING_STRIKE)) {
             // The new sources reduce the lightning strike effect to a purely visual bolt.
             spawnVisualLightning(victim);
         }
 
-        if (attacker.hasEffect(MobEffectRegistry.ICE_ASPECT)) {
+        if (MobEffectRegistry.hasEffect(attacker, MobEffectRegistry.ICE_ASPECT)) {
             frostbite(victim, attacker);
         }
 
@@ -69,7 +75,7 @@ public final class CombatEffects {
 
     /** Ice aspect and the dragonsteel ice knife: deep freeze, slow and a knockback. */
     public static void frostbite(LivingEntity victim, LivingEntity attacker) {
-        if (victim.hasEffect(MobEffectRegistry.WARMING)) {
+        if (MobEffectRegistry.hasEffect(victim, MobEffectRegistry.WARMING)) {
             return;
         }
         IceAndFireCompat.freeze(victim, 300);

@@ -4,9 +4,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 0,
-    "function": "iceandfirecommunitydelight:grant_book_on_first_join"
-  },
   "parent": "iceandfirecommunitydelight:root"
 }
