@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lilies",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfire:ice_dragon_blood"
+    },
+    {
+      "item": "iceandfire:frost_lily"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "iceandfire:frost_lily"
+  }
+}

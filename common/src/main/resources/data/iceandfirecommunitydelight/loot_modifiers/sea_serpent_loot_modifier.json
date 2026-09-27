@@ -1,0 +1,10 @@
+{
+  "type": "iceandfirecommunitydelight:iceandfirecommunitydelight_loot_modifier",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "iceandfire:entities/sea_serpent"
+    }
+  ],
+  "lootTable": "iceandfirecommunitydelight:entities/sea_serpent_loot_table"
+}

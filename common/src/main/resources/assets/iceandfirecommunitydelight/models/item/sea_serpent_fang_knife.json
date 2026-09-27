@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "iceandfirecommunitydelight:item/sea_serpent_fang_knife"
+  }
+}

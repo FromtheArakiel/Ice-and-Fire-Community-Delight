@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lilies",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "iceandfirecommunitydelight:fire_lily_clone"
+    },
+    {
+      "item": "minecraft:poppy"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iceandfire:fire_lily"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "iceandfirecommunitydelight:item/flour_from_dragon_bones"
+  }
+}

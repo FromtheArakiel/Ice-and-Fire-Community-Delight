@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfirecommunitydelight:dough_from_dragon_bones"
+    },
+    {
+      "item": "iceandfirecommunitydelight:dough_from_dragon_bones"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iceandfirecommunitydelight:raw_mini_pizza_blank"
+  }
+}

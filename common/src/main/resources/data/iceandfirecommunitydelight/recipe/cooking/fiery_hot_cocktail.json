@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "iceandfirecommunitydelight:empty_glass"
+  },
+  "cookingtime": 100,
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "iceandfire:fire_dragon_blood"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_lily_extract"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:fiery_hot_cocktail"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 160,
+  "ingredient": {
+    "item": "iceandfirecommunitydelight:hydra_meat"
+  },
+  "result": {
+    "id": "iceandfirecommunitydelight:cooked_hydra_meat"
+  }
+}

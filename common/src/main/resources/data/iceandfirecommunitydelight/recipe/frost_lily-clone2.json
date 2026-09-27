@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lilies",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "iceandfirecommunitydelight:frost_lily_clone"
+    },
+    {
+      "item": "minecraft:cornflower"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iceandfire:frost_lily"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 450,
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "iceandfire:ice_dragon_heart"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "tag": "c:mushrooms"
+    },
+    {
+      "tag": "c:mushrooms"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:ice_heart_with_potatoes_in_mushroom_sauce"
+  }
+}

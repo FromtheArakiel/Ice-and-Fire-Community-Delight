@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "iceandfirecommunitydelight:special_cocktail"
+    },
+    "title": {
+      "translate": "advancements.feel_the_power_adv.title"
+    },
+    "description": {
+      "translate": "advancements.feel_the_power_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "feel_the_power_adv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "iceandfirecommunitydelight:special_cocktail"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "iceandfirecommunitydelight:almost_4_elements"
+}

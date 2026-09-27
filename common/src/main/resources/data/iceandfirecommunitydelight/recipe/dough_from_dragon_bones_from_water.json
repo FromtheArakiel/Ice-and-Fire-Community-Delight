@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "iceandfirecommunitydelight:flour_from_dragon_bones"
+    },
+    {
+      "item": "iceandfirecommunitydelight:flour_from_dragon_bones"
+    },
+    {
+      "item": "iceandfirecommunitydelight:flour_from_dragon_bones"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "iceandfirecommunitydelight:dough_from_dragon_bones"
+  }
+}

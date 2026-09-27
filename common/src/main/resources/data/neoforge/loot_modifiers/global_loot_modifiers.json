@@ -1,0 +1,11 @@
+{
+  "entries": [
+    "iceandfirecommunitydelight:sea_serpent_loot_modifier",
+    "iceandfirecommunitydelight:troll_mountain_loot_modifier",
+    "iceandfirecommunitydelight:troll_frost_loot_modifier",
+    "iceandfirecommunitydelight:troll_forest_loot_modifier",
+    "iceandfirecommunitydelight:cyclops_loot_modifier",
+    "iceandfirecommunitydelight:hydra_loot_modifier"
+  ],
+  "replace": false
+}

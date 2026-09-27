@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "iceandfirecommunitydelight:empty_measuring_cylinder"
+  },
+  "cookingtime": 100,
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "iceandfire:lightning_lily"
+    },
+    {
+      "item": "iceandfire:lightning_lily"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:lightning_lily_extract"
+  }
+}

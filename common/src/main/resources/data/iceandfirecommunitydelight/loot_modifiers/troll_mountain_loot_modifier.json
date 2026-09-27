@@ -1,0 +1,10 @@
+{
+  "type": "iceandfirecommunitydelight:iceandfirecommunitydelight_loot_modifier",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "iceandfire:entities/troll_mountain"
+    }
+  ],
+  "lootTable": "iceandfirecommunitydelight:entities/troll_mountain_loot_table"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.items.dragonsteel_ice_knife.name",
+  "icon": "iceandfirecommunitydelight:dragonsteel_ice_knife",
+  "category": "iceandfirecommunitydelight:items",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.items.dragonsteel_ice_knife.desc"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "iceandfirecommunitydelight:dragonsteel_ice_knife",
+      "title": "book.iceandfirecommunitydelight.category.items.dragonsteel_ice_knife.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.items.dragonsteel_ice_knife.page2.text"
+    }
+  ]
+}

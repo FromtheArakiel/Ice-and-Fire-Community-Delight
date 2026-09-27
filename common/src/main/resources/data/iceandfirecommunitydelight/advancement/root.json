@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "iceandfire:textures/block/serpentscale_red.png",
+    "icon": {
+      "id": "iceandfirecommunitydelight:fresh_soup_from_sea_serpent"
+    },
+    "title": {
+      "translate": "advancements.root.title"
+    },
+    "description": {
+      "translate": "advancements.root.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "root": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

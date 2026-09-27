@@ -1,0 +1,16 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.foods.fried_dragon_egg.name",
+  "icon": "iceandfirecommunitydelight:fried_dragon_egg",
+  "category": "iceandfirecommunitydelight:foods",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.foods.fried_dragon_egg.desc"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "book.iceandfirecommunitydelight.category.foods.fried_dragon_egg.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.fried_dragon_egg.page2.text"
+    }
+  ]
+}

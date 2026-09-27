@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 500,
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:onion"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "iceandfire:cyclops_eye"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:eye_chowder"
+  }
+}

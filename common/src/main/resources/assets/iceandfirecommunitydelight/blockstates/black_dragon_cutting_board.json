@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "iceandfirecommunitydelight:block/black_dragon_cutting_board",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "iceandfirecommunitydelight:block/black_dragon_cutting_board"
+    },
+    "facing=south": {
+      "model": "iceandfirecommunitydelight:block/black_dragon_cutting_board",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "iceandfirecommunitydelight:block/black_dragon_cutting_board",
+      "y": 270
+    }
+  }
+}

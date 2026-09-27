@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.50,
+  "ingredient": {
+    "item": "iceandfire:shiny_scales"
+  },
+  "result": {
+    "count": 1,
+    "id": "iceandfirecommunitydelight:chips_from_shiny_scales"
+  }
+}

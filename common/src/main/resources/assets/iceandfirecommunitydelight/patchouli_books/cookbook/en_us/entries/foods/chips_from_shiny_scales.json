@@ -1,0 +1,29 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.foods.chips_from_shiny_scales.name",
+  "icon": "iceandfirecommunitydelight:chips_from_shiny_scales",
+  "category": "iceandfirecommunitydelight:foods",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.foods.chips_from_shiny_scales.desc"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "iceandfirecommunitydelight:chips_from_shiny_scales_smelting",
+      "title": "book.iceandfirecommunitydelight.category.foods.chips_from_shiny_scales.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.chips_from_shiny_scales.page2.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iceandfirecommunitydelight:spicy_chips_from_shiny_scales",
+      "title": "book.iceandfirecommunitydelight.category.foods.spicy_chips_from_shiny_scales.name",
+      "text": "book.iceandfirecommunitydelight.category.foods.spicy_chips_from_shiny_scales.desc"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "iceandfirecommunitydelight:spicy_chips_from_shiny_scales",
+      "title": "book.iceandfirecommunitydelight.category.foods.spicy_chips_from_shiny_scales.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.spicy_chips_from_shiny_scales.page2.text"
+    }
+  ]
+}

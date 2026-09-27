@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "tag": "c:drinks/milk"
+    },
+    "w": {
+      "item": "iceandfirecommunitydelight:flour_from_dragon_bones"
+    }
+  },
+  "pattern": [
+    "wMw",
+    " w "
+  ],
+  "result": {
+    "id": "iceandfirecommunitydelight:dragon_pie_crust"
+  },
+  "show_notification": true
+}

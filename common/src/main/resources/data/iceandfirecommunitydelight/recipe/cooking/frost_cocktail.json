@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "iceandfirecommunitydelight:empty_glass"
+  },
+  "cookingtime": 100,
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "iceandfire:ice_dragon_blood"
+    },
+    {
+      "item": "iceandfirecommunitydelight:frost_lily_extract"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:frost_cocktail"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "iceandfirecommunitydelight:custom/pie",
+  "textures": {
+    "all": "iceandfirecommunitydelight:block/dragon_pie_bottom",
+    "particle": "iceandfirecommunitydelight:block/lightning_pie_top",
+    "side": "iceandfirecommunitydelight:block/dragon_pie_side",
+    "top": "iceandfirecommunitydelight:block/lightning_pie_top",
+    "bottom": "iceandfirecommunitydelight:block/dragon_pie_bottom"
+  },
+  "render_type": "solid"
+}

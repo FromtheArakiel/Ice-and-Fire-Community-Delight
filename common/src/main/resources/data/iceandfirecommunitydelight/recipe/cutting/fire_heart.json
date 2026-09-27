@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "iceandfire:fire_dragon_heart"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "iceandfire:fire_dragon_flesh"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "farmersdelight:tools/knives"
+  }
+}

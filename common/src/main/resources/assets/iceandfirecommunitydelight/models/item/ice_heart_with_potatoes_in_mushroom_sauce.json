@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "iceandfirecommunitydelight:item/ice_heart_with_mushroom_sauce"
+  }
+}

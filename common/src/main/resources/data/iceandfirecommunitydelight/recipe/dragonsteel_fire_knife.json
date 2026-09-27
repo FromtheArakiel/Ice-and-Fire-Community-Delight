@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "iceandfire:dragonsteel_fire_ingot"
+    },
+    "b": {
+      "tag": "c:bones/wither"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "iceandfirecommunitydelight:dragonsteel_fire_knife"
+  },
+  "show_notification": true
+}

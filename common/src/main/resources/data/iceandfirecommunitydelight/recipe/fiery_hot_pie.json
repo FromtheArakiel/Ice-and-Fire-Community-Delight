@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfirecommunitydelight:fire_minced_meat"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_minced_meat"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_minced_meat"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_lily_extract"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_lily_extract"
+    },
+    {
+      "item": "iceandfirecommunitydelight:dragon_pie_crust"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iceandfirecommunitydelight:fiery_hot_pie"
+  }
+}

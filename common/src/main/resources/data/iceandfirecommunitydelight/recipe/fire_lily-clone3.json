@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lilies",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfirecommunitydelight:fire_lily_extract"
+    },
+    {
+      "item": "iceandfire:fire_lily"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "iceandfire:fire_lily"
+  }
+}

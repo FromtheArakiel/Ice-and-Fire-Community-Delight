@@ -1,0 +1,10 @@
+{
+  "type": "iceandfirecommunitydelight:iceandfirecommunitydelight_loot_modifier",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "iceandfire:entities/cyclops"
+    }
+  ],
+  "lootTable": "iceandfirecommunitydelight:entities/cyclops_loot_table"
+}

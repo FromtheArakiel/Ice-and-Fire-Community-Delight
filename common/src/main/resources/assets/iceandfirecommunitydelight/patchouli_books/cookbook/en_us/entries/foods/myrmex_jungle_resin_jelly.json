@@ -1,0 +1,16 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.foods.myrmex_jungle_resin_jelly.name",
+  "icon": "iceandfirecommunitydelight:myrmex_jungle_resin_jelly",
+  "category": "iceandfirecommunitydelight:foods",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.foods.myrmex_jungle_resin_jelly.desc"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "book.iceandfirecommunitydelight.category.foods.myrmex_jungle_resin_jelly.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.myrmex_jungle_resin_jelly.page2.text"
+    }
+  ]
+}

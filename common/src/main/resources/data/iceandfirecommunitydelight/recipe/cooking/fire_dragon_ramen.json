@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 500,
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:onion"
+    },
+    {
+      "item": "farmersdelight:raw_pasta"
+    },
+    {
+      "item": "iceandfirecommunitydelight:spices_from_witherbone"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_minced_meat"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:fire_dragon_ramen"
+  }
+}

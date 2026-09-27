@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 160,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "iceandfirecommunitydelight:sea_serpent_slice"
+  },
+  "result": {
+    "id": "iceandfirecommunitydelight:cooked_sea_serpent_slice"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "tag": "iceandfirecommunitydelight:cookbook_scales"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "patchouli:guide_book",
+    "components": {
+      "patchouli:book": "iceandfirecommunitydelight:cookbook"
+    }
+  }
+}

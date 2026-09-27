@@ -1,0 +1,52 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.foods.sea_serpent_meat.name",
+  "icon": "iceandfirecommunitydelight:sea_serpent_meat",
+  "category": "iceandfirecommunitydelight:foods",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.foods.sea_serpent_meat.desc"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "iceandfirecommunitydelight:cooked_sea_serpent_meat_smelting",
+      "title": "book.iceandfirecommunitydelight.category.foods.sea_serpent_meat.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.sea_serpent_meat.page2.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iceandfirecommunitydelight:fresh_soup_from_sea_serpent",
+      "text": "book.iceandfirecommunitydelight.category.foods.fresh_soup_from_sea_serpent.desc",
+      "title": "book.iceandfirecommunitydelight.category.foods.fresh_soup_from_sea_serpent.name"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "book.iceandfirecommunitydelight.category.foods.fresh_soup_from_sea_serpent.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.fresh_soup_from_sea_serpent.page2.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iceandfirecommunitydelight:sea_serpent_slice",
+      "text": "book.iceandfirecommunitydelight.category.foods.sea_serpent_slice.desc",
+      "title": "book.iceandfirecommunitydelight.category.foods.sea_serpent_slice.name"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "iceandfirecommunitydelight:cooked_sea_serpent_slice_smelting",
+      "title": "book.iceandfirecommunitydelight.category.foods.sea_serpent_slice.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.sea_serpent_slice.page2.text"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "iceandfirecommunitydelight:sea_serpent_roll",
+      "text": "book.iceandfirecommunitydelight.category.foods.sea_serpent_roll.desc",
+      "title": "book.iceandfirecommunitydelight.category.foods.sea_serpent_roll.name"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "iceandfirecommunitydelight:sea_serpent_roll",
+      "title": "book.iceandfirecommunitydelight.category.foods.sea_serpent_roll.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.sea_serpent_roll.page2.text"
+    }
+  ]
+}

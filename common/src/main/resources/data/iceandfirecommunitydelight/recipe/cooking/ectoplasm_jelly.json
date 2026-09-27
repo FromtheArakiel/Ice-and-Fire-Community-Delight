@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "iceandfire:ectoplasm"
+    },
+    {
+      "item": "iceandfire:ectoplasm"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:ectoplasm_jelly"
+  }
+}

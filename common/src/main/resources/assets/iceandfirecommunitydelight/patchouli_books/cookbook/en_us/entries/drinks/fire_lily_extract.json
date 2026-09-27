@@ -1,0 +1,16 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.drinks.fire_lily_extract.name",
+  "icon": "iceandfirecommunitydelight:fire_lily_extract",
+  "category": "iceandfirecommunitydelight:drinks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.drinks.fire_lily_extract.desc"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "book.iceandfirecommunitydelight.category.drinks.fire_lily_extract.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.drinks.fire_lily_extract.page2.text"
+    }
+  ]
+}

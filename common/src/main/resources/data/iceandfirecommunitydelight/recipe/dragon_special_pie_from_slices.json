@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "iceandfirecommunitydelight:dragon_special_pie_slice"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "iceandfirecommunitydelight:dragon_special_pie"
+  },
+  "show_notification": true
+}

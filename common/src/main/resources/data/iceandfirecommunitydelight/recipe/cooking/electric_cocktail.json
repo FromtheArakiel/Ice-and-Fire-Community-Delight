@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "iceandfirecommunitydelight:empty_glass"
+  },
+  "cookingtime": 100,
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "iceandfire:lightning_dragon_blood"
+    },
+    {
+      "item": "iceandfirecommunitydelight:lightning_lily_extract"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:electric_cocktail"
+  }
+}

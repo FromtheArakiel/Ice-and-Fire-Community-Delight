@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "iceandfirecommunitydelight:dragon_special_pie"
+    },
+    "title": {
+      "translate": "advancements.almost_4_elements.title"
+    },
+    "description": {
+      "translate": "advancements.almost_4_elements.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "almost_4_elements": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "iceandfirecommunitydelight:root"
+}

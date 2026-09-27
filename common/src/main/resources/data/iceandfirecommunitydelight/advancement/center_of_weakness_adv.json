@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:air"
+    },
+    "title": {
+      "translate": "advancements.center_of_weakness_adv.title"
+    },
+    "description": {
+      "translate": "advancements.center_of_weakness_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "center_of_weakness_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "iceandfirecommunitydelight:you_have_been_spotted"
+}

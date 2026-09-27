@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "iceandfire:fire_dragon_flesh"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "iceandfirecommunitydelight:fire_minced_meat"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "farmersdelight:tools/knives"
+  }
+}

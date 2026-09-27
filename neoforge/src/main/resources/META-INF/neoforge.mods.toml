@@ -1,0 +1,55 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "GPL-3.0-only"
+
+[[mods]]
+modId = "iceandfirecommunitydelight"
+version = "${version}"
+displayName = "Ice and Fire Community Delight"
+authors = "FromtheArakiel"
+description = '''
+Ice and Fire themed food, knives and pastries for Farmer's Delight.
+'''
+logoFile = "assets/iceandfirecommunitydelight/textures/logo-v3-1x.png"
+
+[[dependencies.iceandfirecommunitydelight]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.iceandfirecommunitydelight]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.iceandfirecommunitydelight]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.11,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.iceandfirecommunitydelight]]
+modId = "farmersdelight"
+type = "required"
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.iceandfirecommunitydelight]]
+modId = "iceandfire"
+type = "required"
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.iceandfirecommunitydelight]]
+modId = "patchouli"
+type = "required"
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"

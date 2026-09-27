@@ -1,0 +1,13 @@
+[[annotations]]
+path = [
+  "common/src/main/java/**",
+  "fabric/**",
+  "neoforge/**"
+]
+SPDX-License-Identifier = "LicenseRef-PolyForm-Shield-1.0.0"
+SPDX-FileCopyrightText = "2026 FromtheArakiel"
+
+[[annotations]]
+path = "common/src/main/resources/**"
+SPDX-License-Identifier = "LicenseRef-ARR"
+SPDX-FileCopyrightText = "2026 Donne431"

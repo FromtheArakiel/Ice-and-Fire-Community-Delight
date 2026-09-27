@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "iceandfirecommunitydelight:raw_fire_sausage"
+  },
+  "result": {
+    "id": "iceandfirecommunitydelight:fire_sausage"
+  }
+}

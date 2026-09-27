@@ -1,0 +1,12 @@
+build/
+.gradle/
+.architectury-transformer/
+neoforge/build/
+fabric/build/
+common/build/
+common/.gradle/
+libs/
+lib/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar

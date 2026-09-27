@@ -1,0 +1,29 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.foods.mini_pizza.name",
+  "icon": "iceandfirecommunitydelight:mini_pizza",
+  "category": "iceandfirecommunitydelight:foods",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.foods.mini_pizza.desc"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "iceandfirecommunitydelight:raw_mini_pizza_blank",
+      "title": "book.iceandfirecommunitydelight.category.foods.mini_pizza.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.mini_pizza.page2.text"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "iceandfirecommunitydelight:mini_pizza_blank_smelting",
+      "title": "book.iceandfirecommunitydelight.category.foods.mini_pizza.page3.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.mini_pizza.page3.text"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "iceandfirecommunitydelight:mini_pizza",
+      "title": "book.iceandfirecommunitydelight.category.foods.mini_pizza.page4.title",
+      "text": "book.iceandfirecommunitydelight.category.foods.mini_pizza.page4.text"
+    }
+  ]
+}

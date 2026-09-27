@@ -1,0 +1,17 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.items.silver_knife.name",
+  "icon": "iceandfirecommunitydelight:silver_knife",
+  "category": "iceandfirecommunitydelight:items",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.items.silver_knife.desc"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "iceandfirecommunitydelight:silver_knife",
+      "title": "book.iceandfirecommunitydelight.category.items.silver_knife.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.items.silver_knife.page2.text"
+    }
+  ]
+}

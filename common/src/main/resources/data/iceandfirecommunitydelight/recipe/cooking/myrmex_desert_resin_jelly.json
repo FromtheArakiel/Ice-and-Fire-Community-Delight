@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "iceandfire:myrmex_desert_resin"
+    },
+    {
+      "item": "iceandfire:myrmex_desert_resin"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "iceandfirecommunitydelight:myrmex_desert_resin_jelly"
+  }
+}

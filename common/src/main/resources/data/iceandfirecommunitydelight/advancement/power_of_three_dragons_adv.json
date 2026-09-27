@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "iceandfirecommunitydelight:dragon_special_sausage"
+    },
+    "title": {
+      "translate": "advancements.power_of_three_dragons_adv.title"
+    },
+    "description": {
+      "translate": "advancements.power_of_three_dragons_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "power_of_three_dragons_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "iceandfirecommunitydelight:almost_4_elements"
+}

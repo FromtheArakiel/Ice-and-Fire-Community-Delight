@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfirecommunitydelight:lightning_lily_extract"
+    },
+    {
+      "item": "iceandfirecommunitydelight:lightning_sausage"
+    },
+    {
+      "item": "iceandfirecommunitydelight:dragon_bone_bun"
+    }
+  ],
+  "result": {
+    "id": "iceandfirecommunitydelight:lightning_dragon_hotdog"
+  }
+}

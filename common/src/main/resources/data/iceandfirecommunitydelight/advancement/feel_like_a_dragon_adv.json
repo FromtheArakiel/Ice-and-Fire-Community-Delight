@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "iceandfire:dragon_skull_fire"
+    },
+    "title": {
+      "translate": "advancements.feel_like_a_dragon_adv.title"
+    },
+    "description": {
+      "translate": "advancements.feel_like_a_dragon_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "feel_like_a_dragon_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "iceandfirecommunitydelight:almost_4_elements"
+}

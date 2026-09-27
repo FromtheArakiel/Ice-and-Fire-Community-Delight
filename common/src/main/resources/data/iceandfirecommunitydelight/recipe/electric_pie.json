@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfirecommunitydelight:lightning_minced_meat"
+    },
+    {
+      "item": "iceandfirecommunitydelight:lightning_minced_meat"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "item": "iceandfirecommunitydelight:lightning_minced_meat"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "item": "iceandfirecommunitydelight:lightning_lily_extract"
+    },
+    {
+      "item": "iceandfirecommunitydelight:lightning_lily_extract"
+    },
+    {
+      "item": "iceandfirecommunitydelight:dragon_pie_crust"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iceandfirecommunitydelight:electric_pie"
+  }
+}

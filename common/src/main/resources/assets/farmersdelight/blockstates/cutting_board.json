@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=east,blockstate=0": {
+      "model": "farmersdelight:block/cutting_board",
+      "y": 90
+    },
+    "facing=north,blockstate=0": {
+      "model": "farmersdelight:block/cutting_board"
+    },
+    "facing=south,blockstate=0": {
+      "model": "farmersdelight:block/cutting_board",
+      "y": 180
+    },
+    "facing=west,blockstate=0": {
+      "model": "farmersdelight:block/cutting_board",
+      "y": 270
+    },
+    "facing=east,blockstate=1": {
+      "model": "minecraft:stone",
+      "y": 90
+    },
+    "facing=north,blockstate=1": {
+      "model": "minecraft:stone"
+    },
+    "facing=south,blockstate=1": {
+      "model": "minecraft:stone",
+      "y": 180
+    },
+    "facing=west,blockstate=1": {
+      "model": "minecraft:stone",
+      "y": 270
+    },
+    "facing=east,blockstate=2": {
+      "model": "minecraft:stone",
+      "y": 90
+    },
+    "facing=north,blockstate=2": {
+      "model": "minecraft:stone"
+    },
+    "facing=south,blockstate=2": {
+      "model": "minecraft:stone",
+      "y": 180
+    },
+    "facing=west,blockstate=2": {
+      "model": "minecraft:stone",
+      "y": 270
+    }
+  }
+}

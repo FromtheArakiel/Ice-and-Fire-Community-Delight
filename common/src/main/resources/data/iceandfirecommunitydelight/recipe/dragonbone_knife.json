@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": {
+      "tag": "c:bones/wither"
+    },
+    "M": {
+      "item": "iceandfire:dragonbone"
+    }
+  },
+  "pattern": [
+    "M",
+    "H"
+  ],
+  "result": {
+    "id": "iceandfirecommunitydelight:dragonbone_knife"
+  },
+  "show_notification": true
+}

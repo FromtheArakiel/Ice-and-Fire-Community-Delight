@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lilies",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "iceandfirecommunitydelight:lightning_lily_clone"
+    },
+    {
+      "item": "minecraft:allium"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iceandfire:lightning_lily"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "iceandfirecommunitydelight:iceandfirecommunitydelight_loot_modifier",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "iceandfire:entities/troll_frost"
+    }
+  ],
+  "lootTable": "iceandfirecommunitydelight:entities/troll_frost_loot_table"
+}

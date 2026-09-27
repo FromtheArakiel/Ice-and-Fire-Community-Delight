@@ -1,0 +1,13 @@
+{
+  "parent": "iceandfirecommunitydelight:custom/frost_pie_slice2",
+  "textures": {
+    "all": "iceandfirecommunitydelight:block/dragon_pie_bottom",
+    "particle": "iceandfirecommunitydelight:block/forst_pie_cream",
+    "side": "iceandfirecommunitydelight:block/dragon_pie_side",
+    "top": "iceandfirecommunitydelight:block/frost_pie_top",
+    "4": "iceandfirecommunitydelight:block/forst_pie_cream",
+    "bottom": "iceandfirecommunitydelight:block/dragon_pie_bottom",
+    "inner": "iceandfirecommunitydelight:block/frost_pie_inner"
+  },
+  "render_type": "solid"
+}

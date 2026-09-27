@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "iceandfirecommunitydelight:dragon_special_pie_slice"
+    },
+    "title": {
+      "translate": "advancements.too_much_power.title"
+    },
+    "description": {
+      "translate": "advancements.too_much_power.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "too_much_power": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "iceandfirecommunitydelight:almost_4_elements"
+}

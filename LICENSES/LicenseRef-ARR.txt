@@ -1,0 +1,7 @@
+Valid-License-Identifier: LicenseRef-ARR
+License-Text:
+
+Copyright (c) 2026 Donne431. All rights reserved.
+
+No rights are granted to use, copy, modify, merge, publish, distribute, sublicense, or sell copies of this work.
+Any use requires a separate written authorization from the copyright holder.

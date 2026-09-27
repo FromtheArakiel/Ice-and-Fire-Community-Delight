@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "iceandfire:pixie_dust"
+    },
+    "title": {
+      "translate": "advancements.kill_pixie.title"
+    },
+    "description": {
+      "translate": "advancements.kill_pixie.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "iceandfirecommunitydelight:root",
+  "criteria": {
+    "killed_pixie": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "iceandfire:pixie"
+        }
+      }
+    }
+  }
+}

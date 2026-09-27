@@ -1,0 +1,17 @@
+{
+  "name": "book.iceandfirecommunitydelight.category.items.sea_serpent_fang_knife.name",
+  "icon": "iceandfirecommunitydelight:sea_serpent_fang_knife",
+  "category": "iceandfirecommunitydelight:items",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "book.iceandfirecommunitydelight.category.items.sea_serpent_fang_knife.desc"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "iceandfirecommunitydelight:sea_serpent_fang_knife",
+      "title": "book.iceandfirecommunitydelight.category.items.sea_serpent_fang_knife.page2.title",
+      "text": "book.iceandfirecommunitydelight.category.items.sea_serpent_fang_knife.page2.text"
+    }
+  ]
+}

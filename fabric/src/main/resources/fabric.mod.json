@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "iceandfirecommunitydelight",
+  "version": "${version}",
+  "name": "Ice and Fire Community Delight",
+  "description": "Ice and Fire themed food, knives and pastries for Farmer's Delight.",
+  "authors": [
+    "FromtheArakiel"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/iceandfirecommunitydelight/textures/logo-v3-1x.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.arakiel.iceandfirecommunitydelight.fabric.IceAndFireDelightFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.11",
+    "fabric-api": "*",
+    "farmersdelight": "*",
+    "iceandfire": "*",
+    "patchouli": "*"
+  }
+}

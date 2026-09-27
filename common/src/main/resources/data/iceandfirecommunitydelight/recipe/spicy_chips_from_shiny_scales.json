@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfirecommunitydelight:chips_from_shiny_scales"
+    },
+    {
+      "item": "iceandfirecommunitydelight:spices_from_witherbone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "iceandfirecommunitydelight:spicy_chips_from_shiny_scales"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "iceandfirecommunitydelight:raw_mini_pizza_blank"
+  },
+  "result": {
+    "id": "iceandfirecommunitydelight:mini_pizza_blank"
+  }
+}

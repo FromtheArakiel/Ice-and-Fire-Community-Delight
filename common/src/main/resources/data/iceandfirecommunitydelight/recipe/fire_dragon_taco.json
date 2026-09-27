@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farmersdelight:onion"
+    },
+    {
+      "item": "farmersdelight:cabbage"
+    },
+    {
+      "item": "iceandfirecommunitydelight:spices"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_lily_extract"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_minced_meat"
+    },
+    {
+      "item": "iceandfirecommunitydelight:dragon_bone_bun"
+    }
+  ],
+  "result": {
+    "id": "iceandfirecommunitydelight:fire_dragon_taco"
+  }
+}

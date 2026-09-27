@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iceandfirecommunitydelight:troll_intestines"
+    },
+    {
+      "item": "iceandfirecommunitydelight:lightning_minced_meat"
+    },
+    {
+      "item": "iceandfirecommunitydelight:ice_minced_meat"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_minced_meat"
+    },
+    {
+      "item": "iceandfire:ice_dragon_blood"
+    },
+    {
+      "item": "iceandfire:lightning_dragon_blood"
+    },
+    {
+      "item": "iceandfire:fire_dragon_blood"
+    },
+    {
+      "item": "iceandfirecommunitydelight:spices"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "iceandfirecommunitydelight:raw_dragon_special_sausage"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:crops/cabbage"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "item": "farmersdelight:tomato"
+    },
+    {
+      "item": "iceandfirecommunitydelight:fire_lily_extract"
+    },
+    {
+      "item": "iceandfirecommunitydelight:ice_minced_meat"
+    },
+    {
+      "item": "iceandfirecommunitydelight:dragon_bone_bun"
+    }
+  ],
+  "result": {
+    "id": "iceandfirecommunitydelight:cool_sandwich"
+  }
+}
