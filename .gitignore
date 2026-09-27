@@ -5,7 +5,6 @@ neoforge/build/
 fabric/build/
 common/build/
 common/.gradle/
-libs/
 lib/
 *.class
 *.jar
