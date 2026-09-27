@@ -4,7 +4,7 @@ An addon for [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/far
 cooks up the creatures of [Ice and Fire](https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons)
 into food, knives and pastries.
 
-The mod is a 1.21.1 port of the 1.20.1 MCreator project *Ice and Fire Delight* by **Donne431**, code
+The mod is a 1.21.1 port of the 1.20.1 project *Ice and Fire Delight* by **Donne431**, code
 by **FromtheArakiel**, rebuilt as an Architectury project so one code base ships for **Fabric** and
 **NeoForge**.
 
@@ -81,19 +81,6 @@ the dragon special sausage.
 
 ## License
 
-GPL-3.0-only, as declared in `fabric.mod.json` and `neoforge.mods.toml`.
+PolyForm-Shield-1.0.0, as declared in `fabric.mod.json` and `neoforge.mods.toml`.
 
----
 
-## 中文说明
-
-这是一个把《冰与火之歌》的生物做成《农夫乐事》风格食物、小刀与派类的附属模组，由 1.20.1 的
-MCreator 工程移植到 1.21.1 的 Architectury 工程，同一个代码库同时支持 Fabric 与 NeoForge。
-
-必需：Architectury API、农夫乐事、冰与火之歌；可选：JEI（物品说明）与帕秋莉手册（游戏内烹饪书）。
-JEI 与帕秋莉都只是**联动**而非依赖，缺少它们时模组仍可正常运行。
-
-构建：`./gradlew build`，产物位于 `fabric/build/libs/` 与 `neoforge/build/libs/`。配置库
-NightConfig 会内嵌进成品 jar，玩家无需自行安装；Architectury API 不会内嵌。
-
-配置文件：`config/iceandfirecommunitydelight-common.toml`，两个平台共用。
