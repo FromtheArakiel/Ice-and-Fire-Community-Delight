@@ -60,6 +60,7 @@ public final class MobEffectRegistry {
 
     public static final RegistrySupplier<MobEffect> CENTER_OF_WEAKNESS =
             register("center_of_weakness", () -> new ConfigurableMobEffect(MobEffectCategory.BENEFICIAL, -3355444)
+                    .onStarted(entity -> Advancements.award(entity, "center_of_weakness_adv"))
                     .onTick(MobEffectRegistry::applyCenterOfWeakness));
 
     private MobEffectRegistry() {
@@ -98,6 +99,14 @@ public final class MobEffectRegistry {
         return new MobEffectInstance(holder(effect), duration);
     }
 
+    /**
+     * Weakens every hostile mob around the effect holder: Weakness II within 4 blocks and Weakness I
+     * up to 10 blocks. The debuff is only 10 ticks long and refreshed every tick, so mobs recover
+     * right after they leave the radius.
+     *
+     * <p>The applied instances are visible, unlike in the 1.20.1 sources, so that the player can
+     * actually tell which mobs the effect is working on.</p>
+     */
     private static void applyCenterOfWeakness(LivingEntity entity, int amplifier) {
         double range = 10.0D;
         double innerRange = 4.0D;
@@ -112,9 +121,9 @@ public final class MobEffectRegistry {
 
             double distance = entity.distanceTo(mob);
             if (distance <= innerRange) {
-                mob.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 10, 1, false, false));
+                mob.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 10, 1, false, true));
             } else if (distance <= range) {
-                mob.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 10, 0, false, false));
+                mob.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 10, 0, false, true));
             }
         }
     }

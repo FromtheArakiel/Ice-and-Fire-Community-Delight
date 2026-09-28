@@ -55,8 +55,8 @@ locally in `libs/`, so no remote repository is needed for them.
 ```
 
 The finished jars land in `fabric/build/libs/` and `neoforge/build/libs/`. NightConfig (the config
-library) is nested into the built jar - as a Fabric nested jar and through NeoForge's JarJar - so
-players do not have to install it. Architectury API is *not* bundled and stays a normal dependency.
+library) is nested into the Fabric jar, while NeoForge already ships its own copy, so there it stays
+a compile time dependency. Architectury API is *not* bundled and stays a normal dependency.
 
 The project layout follows the usual Architectury split:
 
@@ -81,6 +81,8 @@ the dragon special sausage.
 
 ## License
 
-PolyForm-Shield-1.0.0, as declared in `fabric.mod.json` and `neoforge.mods.toml`.
-
+The code is licensed under the **PolyForm Shield License 1.0.0**
+(`PolyForm-Shield-1.0.0`), as declared in `fabric.mod.json` and `neoforge.mods.toml`. The original
+art and data of the 1.20.1 project stay all rights reserved by **Donne431**; both are recorded in
+`REUSE.toml` and `LICENSES/`.
 

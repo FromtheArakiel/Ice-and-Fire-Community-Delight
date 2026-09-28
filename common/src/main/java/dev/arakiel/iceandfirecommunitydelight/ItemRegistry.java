@@ -11,6 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.block.Block;
@@ -55,12 +56,12 @@ public final class ItemRegistry {
     public static final RegistrySupplier<Item> TROLL_MEAT = edible("troll_meat", Rarity.COMMON, 64, food(3, 0.3F));
     public static final RegistrySupplier<Item> COOKED_TROLL_MEAT = edible("cooked_troll_meat", Rarity.COMMON, 64, food(9, 0.9F));
     public static final RegistrySupplier<Item> HONEY_GLAZED_TROLL_MEAT =
-            edible("honey_glazed_troll_meat", Rarity.COMMON, 1, food(13, 0.45F));
+            withContainer("honey_glazed_troll_meat", Rarity.COMMON, 1, food(13, 0.45F), null, () -> Items.BOWL);
     public static final RegistrySupplier<Item> SEA_SERPENT_MEAT = edible("sea_serpent_meat", Rarity.COMMON, 64, food(3, 0.35F));
     public static final RegistrySupplier<Item> COOKED_SEA_SERPENT_MEAT =
             edible("cooked_sea_serpent_meat", Rarity.COMMON, 64, food(8, 0.9F));
     public static final RegistrySupplier<Item> FRESH_SOUP_FROM_SEA_SERPENT =
-            edible("fresh_soup_from_sea_serpent", Rarity.COMMON, 1, food(15, 0.45F));
+            withContainer("fresh_soup_from_sea_serpent", Rarity.COMMON, 1, food(15, 0.45F), null, () -> Items.BOWL);
     public static final RegistrySupplier<Item> SEA_SERPENT_SLICE =
             edible("sea_serpent_slice", Rarity.COMMON, 64, food(1, 0.4F), null, 5);
     public static final RegistrySupplier<Item> COOKED_SEA_SERPENT_SLICE =
@@ -93,31 +94,37 @@ public final class ItemRegistry {
     public static final RegistrySupplier<Item> COOKED_HYDRA_MEAT = edible("cooked_hydra_meat", Rarity.COMMON, 64, food(10, 0.9F));
     public static final RegistrySupplier<Item> COOL_SANDWICH = special("cool_sandwich", Rarity.UNCOMMON, 64, food(8, 0.4F, true, false),
             FoodEffects::coolSandwich, "item.iceandfirecommunitydelight.tooltip.cool_sandwich.line1");
-    public static final RegistrySupplier<Item> FIRE_DRAGON_RAMEN = special("fire_dragon_ramen", Rarity.UNCOMMON, 1, food(11, 0.4F, true, false),
-            FoodEffects::fireDragonRamen,
-            "item.iceandfirecommunitydelight.tooltip.fire_dragon_ramen.line1",
-            "item.iceandfirecommunitydelight.tooltip.fire_dragon_ramen.line2");
+    public static final RegistrySupplier<Item> FIRE_DRAGON_RAMEN =
+            withContainer("fire_dragon_ramen", Rarity.UNCOMMON, 1, food(11, 0.4F, true, false), FoodEffects::fireDragonRamen,
+                    () -> Items.BOWL,
+                    "item.iceandfirecommunitydelight.tooltip.fire_dragon_ramen.line1",
+                    "item.iceandfirecommunitydelight.tooltip.fire_dragon_ramen.line2");
     public static final RegistrySupplier<Item> FIRE_DRAGON_TACO = special("fire_dragon_taco", Rarity.UNCOMMON, 64, food(8, 0.4F, true, false),
             FoodEffects::fireDragonRamen,
             "item.iceandfirecommunitydelight.tooltip.fire_dragon_ramen.line1",
             "item.iceandfirecommunitydelight.tooltip.fire_dragon_ramen.line2");
-    public static final RegistrySupplier<Item> EYE_CHOWDER = special("eye_chowder", Rarity.RARE, 1, food(16, 0.5F, true, false),
-            FoodEffects::eyeChowder, "item.iceandfirecommunitydelight.tooltip.eye_chowder.line1");
+    public static final RegistrySupplier<Item> EYE_CHOWDER =
+            withContainer("eye_chowder", Rarity.RARE, 1, food(16, 0.5F, true, false), FoodEffects::eyeChowder, () -> Items.BOWL,
+                    "item.iceandfirecommunitydelight.tooltip.eye_chowder.line1");
     public static final RegistrySupplier<Item> HONEY_GLAZED_CYCLOPS_EYE =
-            special("honey_glazed_cyclops_eye", Rarity.RARE, 64, food(9, 0.5F, true, false), FoodEffects::honeyGlazedCyclopsEye,
+            withContainer("honey_glazed_cyclops_eye", Rarity.RARE, 64, food(9, 0.5F, true, false), FoodEffects::honeyGlazedCyclopsEye,
+                    () -> Items.STICK,
                     "item.iceandfirecommunitydelight.tooltip.honey_glazed_cyclops_eye.line1");
     public static final RegistrySupplier<Item> FIRE_HEART_WITH_POTATOES_IN_MUSHROOM_SAUCE =
-            special("fire_heart_with_potatoes_in_mushroom_sauce", Rarity.RARE, 1, food(16, 0.45F, true, false), FoodEffects::fireHeart,
+            withContainer("fire_heart_with_potatoes_in_mushroom_sauce", Rarity.RARE, 1, food(16, 0.45F, true, false),
+                    FoodEffects::fireHeart, () -> Items.BOWL,
                     "item.iceandfirecommunitydelight.tooltip.fire_heart_with_potatoes_in_mushroom_sauce.line1",
                     "item.iceandfirecommunitydelight.tooltip.fire_heart_with_potatoes_in_mushroom_sauce.line2",
                     "item.iceandfirecommunitydelight.tooltip.fire_heart_with_potatoes_in_mushroom_sauce.line3");
     public static final RegistrySupplier<Item> ICE_HEART_WITH_POTATOES_IN_MUSHROOM_SAUCE =
-            special("ice_heart_with_potatoes_in_mushroom_sauce", Rarity.RARE, 1, food(16, 0.45F, true, false), FoodEffects::iceHeart,
+            withContainer("ice_heart_with_potatoes_in_mushroom_sauce", Rarity.RARE, 1, food(16, 0.45F, true, false),
+                    FoodEffects::iceHeart, () -> Items.BOWL,
                     "item.iceandfirecommunitydelight.tooltip.ice_heart_with_potatoes_in_mushroom_sauce.line1",
                     "item.iceandfirecommunitydelight.tooltip.ice_heart_with_potatoes_in_mushroom_sauce.line2",
                     "item.iceandfirecommunitydelight.tooltip.ice_heart_with_potatoes_in_mushroom_sauce.line3");
     public static final RegistrySupplier<Item> LIGHTNING_HEART_WITH_POTATOES_IN_MUSHROOM_SAUCE =
-            special("lightning_heart_with_potatoes_in_mushroom_sauce", Rarity.RARE, 1, food(16, 0.45F, true, false), FoodEffects::lightningHeart,
+            withContainer("lightning_heart_with_potatoes_in_mushroom_sauce", Rarity.RARE, 1, food(16, 0.45F, true, false),
+                    FoodEffects::lightningHeart, () -> Items.BOWL,
                     "item.iceandfirecommunitydelight.tooltip.lightning_heart_with_potatoes_in_mushroom_sauce.line1",
                     "item.iceandfirecommunitydelight.tooltip.lightning_heart_with_potatoes_in_mushroom_sauce.line2",
                     "item.iceandfirecommunitydelight.tooltip.lightning_heart_with_potatoes_in_mushroom_sauce.line3");
@@ -196,7 +203,8 @@ public final class ItemRegistry {
             "item.iceandfirecommunitydelight.tooltip.lightning_lily_extract.line2");
     public static final RegistrySupplier<Item> HYDRA_VENOM_SOUP =
             ITEMS.register(IceAndFireDelight.id("hydra_venom_soup"), () -> new ConsumableItem(
-                    properties(Rarity.UNCOMMON, 1).food(food(7, 1.1F, true, false)), FoodEffects::hydraVenomSoup, null, true, 30)
+                    properties(Rarity.UNCOMMON, 1).food(food(7, 1.1F, true, false)), FoodEffects::hydraVenomSoup,
+                    () -> Items.BOWL, true, 30)
                     .tooltip("item.iceandfirecommunitydelight.tooltip.hydra_venom_soup.line1",
                             "item.iceandfirecommunitydelight.tooltip.hydra_venom_soup.line2",
                             "item.iceandfirecommunitydelight.tooltip.warning"));
@@ -255,6 +263,13 @@ public final class ItemRegistry {
                 () -> new ConsumableItem(properties(rarity, stackSize).food(food), onEaten, null, false, 0).tooltip(tooltips));
     }
 
+    /** Food that hands its container back after being eaten, like the bowl of a soup. */
+    private static RegistrySupplier<Item> withContainer(String name, Rarity rarity, int stackSize, FoodProperties food,
+                                                       Consumer<LivingEntity> onEaten, Supplier<Item> container, String... tooltips) {
+        return ITEMS.register(IceAndFireDelight.id(name),
+                () -> new ConsumableItem(properties(rarity, stackSize).food(food), onEaten, container, false, 0).tooltip(tooltips));
+    }
+
     private static RegistrySupplier<Item> drink(String name, Rarity rarity, Consumer<LivingEntity> onEaten,
                                                 Supplier<Item> container, String... tooltips) {
         return ITEMS.register(IceAndFireDelight.id(name), () -> new ConsumableItem(
@@ -263,7 +278,8 @@ public final class ItemRegistry {
 
     private static RegistrySupplier<Item> extract(String name, Consumer<LivingEntity> onEaten, String... tooltips) {
         return ITEMS.register(IceAndFireDelight.id(name), () -> new ConsumableItem(
-                properties(Rarity.RARE, 64).food(food(0, 0.0F, true, false)), onEaten,
+                properties(Rarity.RARE, 64).food(food(0, 0.0F, true, false))
+                        .craftRemainder(ItemRegistry.EMPTY_MEASURING_CYLINDER.get()), onEaten,
                 () -> ItemRegistry.EMPTY_MEASURING_CYLINDER.get(), true, 20).tooltip(tooltips));
     }
 
