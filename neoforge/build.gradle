@@ -22,12 +22,6 @@ configurations {
         canBeResolved = true
         canBeConsumed = false
     }
-    // Libraries that are nested into the jar in NeoForge's JarJar format.
-    jarJarBundle {
-        canBeResolved = true
-        canBeConsumed = false
-        transitive = false
-    }
 }
 
 repositories {
@@ -51,42 +45,11 @@ dependencies {
     modImplementation files(rootProject.file('libs/FarmersDelight-1.21.1-1.3.4.jar'))
     modImplementation files(rootProject.file('libs/Patchouli-1.21.1-93-NEOFORGE.jar'))
 
-    // NightConfig is nested with JarJar (see the processResources block below), so the finished
-    // mod carries its own config library. Architectury API stays a normal dependency.
-    jarJarBundle "com.electronwill.night-config:core:$rootProject.nightconfig_version"
-    jarJarBundle "com.electronwill.night-config:toml:$rootProject.nightconfig_version"
-}
-
-// ---------------------------------------------------------------------------------------------
-// JarJar: nest the libraries above and describe them in META-INF/jarjar/metadata.json
-// ---------------------------------------------------------------------------------------------
-def jarJarLibraries = [
-        [group: 'com.electronwill.night-config', name: 'core',                 version: rootProject.nightconfig_version],
-        [group: 'com.electronwill.night-config', name: 'toml',                 version: rootProject.nightconfig_version]
-]
-
-def jarJarMetadataJson = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson([
-        jars: jarJarLibraries.collect { library ->
-                [
-                        identifier  : [group: library.group, artifact: library.name],
-                        version     : [range: "[${library.version},)", artifactVersion: library.version],
-                        path        : "META-INF/jarjar/${library.name}-${library.version}.jar",
-                        isObfuscated: false
-                ]
-        }
-]))
-
-def jarJarMetadataDir = layout.buildDirectory.dir('generated/jarjar-metadata')
-
-def writeJarJarMetadata = tasks.register('writeJarJarMetadata') {
-    def outputDirectory = jarJarMetadataDir
-    def metadata = jarJarMetadataJson
-    outputs.dir(outputDirectory)
-    doLast {
-        def target = outputDirectory.get().asFile.toPath().resolve('META-INF/jarjar')
-        java.nio.file.Files.createDirectories(target)
-        java.nio.file.Files.writeString(target.resolve('metadata.json'), metadata)
-    }
+    // NightConfig (TOML) - the config library used by ModConfig.
+    // NeoForge already ships its own copy of NightConfig, so we must NOT nest it again.
+    // Declaring it compile-only lets the common sources compile while the game provides it at runtime.
+    compileOnly "com.electronwill.night-config:core:$rootProject.nightconfig_version"
+    compileOnly "com.electronwill.night-config:toml:$rootProject.nightconfig_version"
 }
 
 processResources {
@@ -95,12 +58,6 @@ processResources {
     filesMatching('META-INF/neoforge.mods.toml') {
         expand version: inputs.properties.version
     }
-
-    dependsOn writeJarJarMetadata
-    from(configurations.jarJarBundle) {
-        into 'META-INF/jarjar'
-    }
-    from(jarJarMetadataDir)
 }
 
 shadowJar {

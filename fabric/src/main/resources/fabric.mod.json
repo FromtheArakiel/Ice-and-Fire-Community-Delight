@@ -7,7 +7,7 @@
   "authors": [
     "FromtheArakiel"
   ],
-  "license": "GPL-3.0-only",
+  "license": "PolyForm-Shield-1.0.0",
   "icon": "assets/iceandfirecommunitydelight/textures/icon.png",
   "environment": "*",
   "entrypoints": {
